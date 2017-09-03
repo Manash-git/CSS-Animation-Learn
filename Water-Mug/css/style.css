@@ -1,0 +1,62 @@
+*{  margin: 0;
+    padding : 0;
+}
+body {
+/*    background-image: url(../images/Pattern.jpg);*/
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #263238;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500 ;
+    font-size : 16 px;
+    line-height : 20px;
+}
+
+.mug{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+/*    background-color: #253847;*/
+    width: 200px;
+    height: 300px;
+    border: 8px solid #47484B;
+    border-radius: 20px;
+    border-top: transparent;
+    background-image: url(../images/water-edit.png);
+    background-repeat: repeat-x;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 0 10px #FFFFFF,0 20px 35px rgba(0,0,0,.5);
+/*    transition: 5s;*/
+    animation: water;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+/*    animation: water 0 linear infinite;*/
+    
+}
+@keyframes water{
+    
+    0%{
+        background-position: 0px 320px;
+    }
+    50%{
+        background-position: 4500px -100px;
+    }
+    100%{
+        background-position: 8000px 250px;
+    }
+}
+.mug::after{
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 150px;
+    border: 13px solid #FFFFFF;
+    right: -120px;
+    top: 60px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+
+}

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/Pattern1.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: peru;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500 ;
+}
+.layout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.layout h1 {
+/*    position: relative;*/
+/*    text-align: center;*/
+    font-size: 150px;
+    font-weight: bold;
+/*    display: inline-block;*/
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,.1);
+/*    color: transparent;*/
+    background-image: url(../images/water.png);
+    background-repeat: repeat-x;
+/*    background-repeat: no-repeat;*/
+    -webkit-background-clip: text;
+/*     background-position: 0px -75px;*/
+    
+    animation: water-fill 30s linear infinite;
+    animation-delay: -2.2s;
+    
+}
+
+@keyframes water-fill {
+    0%{
+        background-position: 0px 50px;
+/*
+        background-position: left 0px;
+        background-position: top 80px;
+*/
+    }
+    30%{
+       background-position: left 5000px top -15px;
+    }
+    60%{
+        background-position: left 10500px top -145px;
+    }
+/*
+    75%{
+       background-position: left 2400px top -40px;
+    }
+*/
+    100%{
+        background-position: left 17000px top 20px;
+    }
+}
