@@ -1,0 +1,68 @@
+*{  margin: 0;
+    padding : 0;
+}
+body {
+    background-image: url(../images/Pattern6.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: #1A2227;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500 ;
+    font-size : 16 px;
+    line-height : 20px;
+}
+.layout {
+    width: 1000px;
+    margin: 35px auto;
+    background: #fff;
+    padding: 50px;
+    display: block;
+    overflow: hidden;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+footer{
+/*    display: inline-block;*/
+    margin-top: 25px;
+    overflow: hidden;
+    padding: 10px;
+    color: #DECB5B;
+    background-color: #263238;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+/*    top: 900vh;*/
+}
+
+
+footer p{
+    display: inline-block;
+    color: lightgrey;
+    
+/*    font-size: 22px;*/
+    text-align: justify;
+}
+
+h1{
+  border-right: 3px solid #263238;
+    padding:2px 0px;
+    width: 35ch;
+    height: 25px;
+    overflow: hidden;
+    margin: 0;
+    font-family: consolas;
+    white-space: nowrap;
+    animation: text 2.2s steps(35);
+}
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 35ch;
+        
+    }
+}
